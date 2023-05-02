@@ -2,13 +2,15 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo logo">
-        <img class="logo__simplified" src="img/logo/logo-simplified.svg" width="191" height="38"
+        <img src="img/logo/logo-simplified.svg" width="191" height="38"
              alt="Логотип интернет-магазина Кэт энерджи.">
       </a>
       <nav class="main-header__nav main-nav">
@@ -21,17 +23,17 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list nav-list">
             <li class="nav-list__item nav-list__item--current">
-              <a>
+              <a class="nav-list__link">
                 Главная
               </a>
             </li>
             <li class="nav-list__item">
-              <a href="catalog.html">
+              <a class="nav-list__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="nav-list__item">
-              <a href="program.html">
+              <a class="nav-list__link" href="program.html">
                 Подбор программы
               </a>
             </li>
@@ -45,8 +47,10 @@
         <div class="promo__wrapper">
           <h2 class="promo__title title">Функциональное питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
-          <img class="promo__image" src="img/promo/promo-example-feed.png" width="280" height="270"
-               alt="Вкуснейший корм с курицей.">
+          <div class="promo__image">
+            <img src="img/promo/promo-example-feed.png" width="280" height="270"
+                 alt="Вкуснейший корм с курицей.">
+          </div>
           <a class="promo__button button" href="program.html">подобрать программу</a>
         </div>
       </section>
@@ -58,13 +62,13 @@
               <h3 class="program__title">похудение</h3>
               <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по
                 деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="program__button button button--accent" href="#">каталог slim</a>
+              <a class="program__link" href="#">каталог slim</a>
             </li>
             <li class="program__item program__item--mass-gain">
               <h3 class="program__title">Набор массы</h3>
               <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
                 Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="program__button button button--accent" href="#">каталог pro</a>
+              <a class="program__link" href="#">каталог pro</a>
             </li>
           </ul>
         </div>
@@ -104,8 +108,8 @@
               <dd class="item-example__description">затрачено времени</dd>
             </div>
             <div class="example__item item-example item-example--total">
-              <dt class="item-example__argument item-example__argument--total">Затраты на питание:</dt>
-              <dd class="item-example__description item-example__description--total">15 000 РУБ.</dd>
+              <dt class="item-example__argument">Затраты на питание:</dt>
+              <dd class="item-example__description">15 000 РУБ.</dd>
             </div>
           </dl>
           <div class="example__slider slider-example">
@@ -143,12 +147,14 @@
       </section>
       <div class="main-footer__wrapper">
         <section class="main-footer__logo footer-logo">
+          <h2 class="visually-hidden">Наш логотип.</h2>
           <a class="footer-logo__link" href="index.html">
             <img class="footer-logo__image" src="img/logo/logo-footer.svg" width="128" height="24"
                  alt="Логотип интернет-магазина Кэт энерджи: название.">
           </a>
         </section>
         <section class="main-footer__social social">
+          <h2 class="visually-hidden">Мы в соцсетях.</h2>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="https://vk.com/htmlacademy">
@@ -186,6 +192,7 @@
           </ul>
         </section>
         <section class="main-footer__copyright copyright">
+          <h2 class="visually-hidden">Сайт создан HTML Academy.</h2>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <p class="copyright__text">HTML Academy</p>
             <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="34"

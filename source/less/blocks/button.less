@@ -1,0 +1,42 @@
+.button {
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: @white;
+  background-color: @green;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  padding: 7px 44px;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: @green-interaction;
+  outline: none;
+}
+
+.button:active {
+  background-color: @green-interaction;
+  color: @white-interaction;
+}
+
+.item__button--accent {
+  color: @dark-grey;
+  background-color: @grey;
+}
+
+.item__button--accent:hover,
+.item__button--accent:focus {
+  background-color: @grey-interaction;
+  outline: none;
+}
+
+.item__button--accent:active {
+  color: @dark-grey-interaction;
+  background-color: @grey-interaction;
+}
