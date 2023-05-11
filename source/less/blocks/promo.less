@@ -1,19 +1,53 @@
 .promo {
   background-color: @promo-background;
+
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+    color: @black;
+  }
+}
+
+.promo__wrapper {
+  @media(min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .promo__title {
   color: @white;
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    color: @black;
+  }
 }
 
 .promo__slogan {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
+  font-family: @oswald;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   color: @white;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    color: @black;
+    text-align: left;
+  }
+}
+
+.promo__image {
+  @media(min-width: @tablet-width) {
+    order: 2;
+  }
+}
+
+.promo__button {
+  .button();
+
+  @media(min-width: @tablet-width) {
+    width: max-content;
+    order: 1;
+  }
 }
