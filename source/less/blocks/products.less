@@ -1,3 +1,19 @@
 .products__list {
   .list-reset();
+  display: grid;
+  grid-template-columns:  1fr;
+  text-align: center;
+  gap: 19px;
+  margin-bottom: 50px;
+
+  @media(min-width: @tablet-width) {
+    grid-template-columns:  1fr 1fr;
+    gap: 60px;
+  }
+
+  @media(min-width: @desktop-width) {
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    gap: 63px 80px;
+  }
 }
+

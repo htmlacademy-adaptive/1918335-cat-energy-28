@@ -1,10 +1,35 @@
 .stock {
+  display: flex;
+  align-items: center;
+  width: 100%;
   background-color: @promo-background;
+  padding: 187px 60px 43px;
+
+  @media(min-width: @tablet-width) {
+    justify-content: right;
+    padding: 70px 124px 70px 0;
+  }
+
+  @media(min-width: @desktop-width) {
+    width: 245px;
+    justify-content: center;
+    padding: 185px 0 42px;
+  }
 }
 
 .stock__description {
   font-size: 16px;
   line-height: 20px;
   color: @white;
+  text-align: center;
   margin: 0;
+
+  @media(min-width: @tablet-width) {
+    text-align: left;
+    max-width: 161px;
+  }
+
+  @media(min-width: @desktop-width) {
+    text-align: center;
+  }
 }
