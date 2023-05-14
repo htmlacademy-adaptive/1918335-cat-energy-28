@@ -9,16 +9,16 @@
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo logo">
-      <img class="logo__simplified" src="img/logo/logo-simplified.svg" width="191" height="38"
-           alt="Логотип интернет-магазина Кэт энерджи.">
-      <img class="logo__main" src="img/logo/logo.svg" width="202" height="59"
-           alt="Логотип интернет-магазина Кэт энерджи.">
+    <a class="main-header__logo">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/logo/logo.svg">
+        <img src="img/logo/logo-simplified.svg" width="191" height="38"
+             alt="Логотип интернет-магазина Кэт энерджи.">
+      </picture>
     </a>
     <nav class="main-header__nav main-nav">
       <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню.</span>
-        <span class="visually-hidden">Закрыть меню.</span>
+        <span class="visually-hidden">Управление меню.</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list nav-list">

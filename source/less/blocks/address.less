@@ -1,4 +1,31 @@
+.address {
+  position: relative;
+  width: 100%;
+}
+
+.address__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 20px;
+
+  @media(min-width: @tablet-width) {
+    padding: 56px 70px;
+  }
+
+  @media(min-width: @desktop-width) {
+    position: absolute;
+    width: 565px;
+    left: 10%;
+    top: 25%;
+    background-color: @white;
+    padding: 56px 60px 56px 80px;
+  }
+}
+
 .address__intro {
+  width: 139px;
   font-family: @oswald;
   font-size: 16px;
   line-height: 20px;
@@ -8,6 +35,15 @@
 }
 
 .address__text {
+  width: 139px;
   line-height: 20px;
   font-style: normal;
+}
+
+.address__map img {
+  @media(min-width: @tablet-width) {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
 }

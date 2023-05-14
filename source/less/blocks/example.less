@@ -1,10 +1,25 @@
 .example {
   background-color: @example-background;
+  position: relative;
+
+  @media(min-width: @desktop-width) {
+    height: 598px;
+  }
 }
 
 .example__title {
-  text-align: left;
+  .title();
+  line-height: 40px;
   margin-bottom: 40px;
+}
+
+.example__description {
+  margin: 0;
+
+  @media(min-width: @desktop-width) {
+    display: block;
+    width: 436px;
+  }
 }
 
 .item-example__argument {
@@ -26,8 +41,3 @@
   font-size: 14px;
   line-height: 20px;
 }
-
-.slider-example__list {
-  .list-reset();
-}
-
