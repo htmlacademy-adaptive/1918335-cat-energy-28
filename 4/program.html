@@ -10,16 +10,16 @@
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo logo">
-      <img class="logo__simplified" src="img/logo/logo-simplified.svg" width="191" height="38"
-           alt="Логотип интернет-магазина Кэт энерджи.">
-      <img class="logo__main" src="img/logo/logo.svg" width="202" height="59"
-           alt="Логотип интернет-магазина Кэт энерджи.">
+    <a class="main-header__logo">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/logo/logo.svg">
+        <img src="img/logo/logo-simplified.svg" width="191" height="38"
+             alt="Логотип интернет-магазина Кэт энерджи.">
+      </picture>
     </a>
     <nav class="main-header__nav main-nav">
       <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню.</span>
-        <span class="visually-hidden">Закрыть меню.</span>
+        <span class="visually-hidden">Управление меню.</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list nav-list">
@@ -43,7 +43,7 @@
     </nav>
   </header>
   <main class="main-container">
-    <h1 class="main-container__title title title--secondary">Подбор программы</h1>
+    <h1 class="main-container__title">Подбор программы</h1>
     <section class="questionnaire">
       <div class="questionnaire__wrapper">
         <p class="questionnaire__intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
@@ -90,7 +90,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form-group">
-            <legend class="form-group__title form-title">Контактные данные (владельца кота)</legend>
+            <legend class="form-group__title">Контактные данные (владельца кота)</legend>
             <div class="form-group__item text-field">
               <label class="text-field__label label" for="mail">E-mail:*</label>
               <input class="text-field__input" type="email" id="mail" name="mail" value="kuklachev@gmail.com" placeholder="kuklachev@gmail.com"
@@ -103,12 +103,12 @@
             </div>
           </fieldset>
           <fieldset class="form__group form-group">
-            <legend class="form-group__title form-title">Комментарий</legend>
+            <legend class="form-group__title">Комментарий</legend>
             <label class="visually-hidden" for="comment">Комментарий.</label>
             <textarea class="form-group__input" id="comment" name="comment" placeholder="">Расскажите обо всех повАдках кота</textarea>
           </fieldset>
           <fieldset class="form__group form-group">
-            <legend class="form-group__title form-title">Дополнительно</legend>
+            <legend class="form-group__title">Дополнительно</legend>
             <ul class="form-group__list">
               <li class="form-group__item">
                 <label class="form-group__checkbox checkbox">

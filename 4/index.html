@@ -10,16 +10,16 @@
 </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo logo">
-        <img class="logo__simplified" src="img/logo/logo-simplified.svg" width="191" height="38"
+      <a class="main-header__logo">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo/logo.svg">
+          <img src="img/logo/logo-simplified.svg" width="191" height="38"
              alt="Логотип интернет-магазина Кэт энерджи.">
-        <img class="logo__main" src="img/logo/logo.svg" width="202" height="59"
-             alt="Логотип интернет-магазина Кэт энерджи.">
+        </picture>
       </a>
       <nav class="main-header__nav main-nav">
         <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-          <span class="visually-hidden">Закрыть меню.</span>
+          <span class="visually-hidden">Управление меню.</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list nav-list">
@@ -46,17 +46,20 @@
       <h1 class="visually-hidden">Кэт энерджи - функциональное питание для котов.</h1>
       <section class="promo">
         <div class="promo__wrapper">
-          <h2 class="promo__title title">Функциональное питание для котов</h2>
+          <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <div class="promo__image">
-            <img src="img/promo/promo-example-feed.png" width="280" height="270"
-                 alt="Вкуснейший корм с курицей.">
+            <picture>
+              <source media="(min-width: 1400px)" srcset="img/promo/promo-example-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/promo/promo-example-tablet.png">
+              <img src="img/promo/promo-example.png" width="280" height="270"
+                   alt="Вкуснейший корм с курицей.">
+            </picture>
           </div>
           <a class="promo__button" href="program.html">подобрать программу</a>
         </div>
       </section>
       <section class="program">
-        <div class="program__wrapper">
           <h2 class="visually-hidden">Примеры программ питания.</h2>
           <ul class="program__list">
             <li class="program__item program__item--weight-loss">
@@ -72,11 +75,10 @@
               <a class="program__link" href="#">каталог pro</a>
             </li>
           </ul>
-        </div>
       </section>
       <section class="info">
         <div class="info__wrapper">
-          <h2 class="info__title title">Как это работает</h2>
+          <h2 class="info__title">Как это работает</h2>
           <ul class="info__list">
             <li class="info__item info__item--profit">
               Функциональное питание содержит только полезные питательные вещества.
@@ -119,10 +121,10 @@
                 <img class="slider-example__fat" src="img/slider/fat-cat.png" width="560" height="512"
                      alt="Толстый котик.">
               </li>
-              <li class="slider-example__item">
-                <img class="slider-example__thin" src="img/slider/thin-cat.png" width="560" height="512"
-                     alt="Худой котик.">
-              </li>
+<!--              <li class="slider-example__item">-->
+<!--                <img class="slider-example__thin" src="img/slider/thin-cat.png" width="560" height="512"-->
+<!--                     alt="Худой котик.">-->
+<!--              </li>-->
             </ul>
             <div class="slider-example__range">
               <!--кнопка для слайдера-->
