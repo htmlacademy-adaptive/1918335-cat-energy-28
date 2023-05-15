@@ -3,3 +3,38 @@
   padding: 0;
   list-style-type: none;
 }
+
+.button {
+  display: inline-block;
+  font-family: @oswald;
+  font-size: 14px;
+  line-height: 18px;
+  color: @white;
+  background-color: @green;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: center;
+  border: none;
+  padding: 10px 44px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: @green-interaction;
+    outline: none;
+  }
+
+  &:active {
+    background-color: @green-interaction;
+    color: @white-interaction;
+  }
+}
+
+.title {
+  font-family: @oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: @black;
+  margin: 0;
+}

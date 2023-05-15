@@ -1,0 +1,18 @@
+.slider-example {
+  margin: 0 auto;
+  width: 280px;
+
+  @media(min-width: @tablet-width) {
+    width: 560px;
+  }
+
+  @media(min-width: @desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 5%;
+  }
+}
+
+.slider-example__list {
+  .list-reset();
+}

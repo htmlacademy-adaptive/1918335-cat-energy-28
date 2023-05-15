@@ -1,5 +1,15 @@
 .additional-characteristics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin: 0;
+  margin-bottom: 15px;
+
+  @media(min-width: @tablet-width) {
+    justify-content: right;
+    gap: 50px;
+    margin: 0;
+  }
 }
 
 .additional-characteristics__name,

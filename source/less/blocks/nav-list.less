@@ -2,6 +2,10 @@
   .list-reset();
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .nav-list__item {
@@ -10,13 +14,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: @white;
 }
 
 .nav-list__link {
   display: block;
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
+  font-family: @oswald;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
